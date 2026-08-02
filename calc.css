@@ -1,0 +1,88 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f5f5f5;
+  font-family: Arial, sans-serif;
+}
+
+/* ===== Calculator Container ===== */
+.calculator {
+  background-color: #222;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  width: 260px;
+}
+
+/* ===== Display ===== */
+.display {
+  background-color: #000;
+  color: #0f0;
+  font-size: 2rem;
+  padding: 15px;
+  border-radius: 5px;
+  text-align: right;
+  margin-bottom: 15px;
+  overflow-x: auto;
+}
+
+/* ===== Buttons Grid ===== */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+/* ===== Button Styles ===== */
+.btn {
+  padding: 20px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+/* Number Buttons */
+.number {
+  background-color: silver;
+  color: #000;
+}
+.number:hover {
+  background-color: #b0b0b0;
+}
+
+/* Operator Buttons */
+.operator {
+  background-color: silver;
+  color: #000;
+}
+.operator:hover {
+  background-color: #b0b0b0;
+}
+
+/* Equals Button */
+.equals {
+  background-color: silver;
+  color: #000;
+  grid-row: span 3; /* make equals taller */
+}
+.equals:hover {
+  background-color: #b0b0b0;
+}
+
+/* Clear Button */
+.clear {
+  background-color: silver;
+  color: #000;
+}
+.clear:hover {
+  background-color: #b0b0b0;
+}
+
+/* Zero Button spans 2 columns */
+.zero {
+  grid-column: span 2;
+}
